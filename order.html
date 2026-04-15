@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+		<title>ORDER FORM</title>
+		<meta charset = "utf-8"/>
+        <link rel="stylesheet" type="text/css" href="order.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+        <script src="order.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class = "nav">
+        <div class = "restoName"><h2>Primo's</h2></div>
+        <div class = "navlinks">
+            <ul>
+                <li><a class = "navList" href="YANGA_Homepage_ITBD.html"> HOME </a></li>
+                <li><a class = "navList" href="#"> MENU </a></li>
+                <li><a class = "navList" href="https://www.facebook.com/pdarlene23?mibextid=ZbWKwL"> CONTACT US </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class = "container2">
+        <h1> MENU </h1>
+        <div class = "menu">
+            <div class = "food">
+                <img src = "pepperoni.jpg" width = "200px" height="200px">
+                <br><br><br>
+                <blockquote> Pepperoni pizza, with cheesy and sweet sauce </blockquote> <br><br>
+                <button class = "orderBtn"> <a href = "#pizza"> ORDER PEPPERONI </a> </button>
+            </div>
+
+            <div class = "food">
+                <img src = "hawaiian.jpg" width = "200px" height="200px">
+                <br><br><br>
+                <blockquote> Get that sweet, sour and salty taste with our best seller hawaiian pizza! </blockquote> <br>
+                <button class = "orderBtn"> <a href = "#pizza"> ORDER HAWAIIAN </a> </button>
+            </div>
+
+            <div class = "food">
+                <img src = "allmeat.jpg" width = "200px" height="200px">
+                <blockquote> Meatier than the meatiest pizza. Order this All-Meat Pizza Now!</blockquote> <br><br><br>
+                <button class = "orderBtn"> <a href = "#pizza"> ORDER ALL-MEAT </a> </button>
+            </div>
+
+            <div class = "food">
+                <img src = "special.jpg" width = "200px" height="200px">
+                <br><br><br>
+                <blockquote> Primo's special and self made recipe pizza. Taste it here now! </blockquote> <br><br>
+                <button class = "orderBtn"> <a href = "#pizza"> ORDER Primo's Special </a> </button>
+            </div>
+        </div>
+    </div>
+    <form id = "order-form">
+        <div class = "container3">
+            <div class = "pizza" id = "pizza">
+                <h2>Pizza Add Ons</h2>
+                
+                    
+                    <label for="burgerType">Additional: </label><br>
+                        <input type = "checkbox" value="cheese" data-price="20.00">Add Cheese  - P20<br>
+                        <input type = "checkbox"  value="pepperoni" data-price="50.00">Add Pepperoni - P50 <br>
+                        <input type = "checkbox"  value="sauce" data-price="50.00">Add Sauce - P50 <br>
+                        <input type = "checkbox" n value="Vegetables" data-price="100.00">Add Vegetables - P100 <br>
+                        <input type = "checkbox"  value="pineapple" data-price="50.00">Add Pineapple - P50 <br>
+                        <input type = "checkbox"  value="bacon" data-price="5o.00">Add Bacon - P50 <br>
+                    
+                        <div id="total">
+                            Total: $<span id="total-amount">0.00</span>
+                          </div>
+                          <button class = "order"> <a href = "#pizza"> ORDER </a> </button>
+            </div>
+        </div>
+                    
+
+                
+                
+    </form>
+
+</body>
+</html>
