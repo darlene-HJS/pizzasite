@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav {
+    background-color: #5D3FD3;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.restoName {
+    padding: 10px 30px;
+    letter-spacing: 2px;
+    font-size: 20;
+    cursor: pointer;
+}
+
+.navlinks {
+    float: right;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.navlinks ul li {
+    display: inline-block;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.navlinks ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 17;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.navList::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: white;
+    transition: width 0.3s ease;
+}
+
+.navList:hover::after {
+    width: 100%;
+}
+
+.container {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.30), rgba(0,0,0,0.62)), url("YANGA_IMAGES_ITBD/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    height: 720px;
+    text-align: center;
+}
+
+.container h1 {
+    padding-top: 230px;
+    color: white;
+    font-size: 90px;
+}
+
+.orderBtn {
+    background-color: #5D3FD3;
+    padding: 15px 10px;
+    border: none;
+    font-size: 15;
+    border-radius: 3px;
+    margin-top: 60px;
+    transition: 0.2s ease;
+    width: 300px;
+}
+
+.orderBtn a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+}
+
+.orderBtn:hover {
+    padding: 20px 15px;
+}
+
+
+span {
+    color: #CF9FFF;
+}

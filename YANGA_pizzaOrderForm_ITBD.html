@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+		<title>ORDER FORM</title>
+		<meta charset = "utf-8"/>
+        <link rel="stylesheet" type="text/css" href="menu.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class = "nav">
+        <div class = "restoName"><h2>Primo's</h2></div>
+        <div class = "navlinks">
+            <ul>
+                <li><a class = "navList" href="YANGA_Homepage_ITBD.html"> HOME </a></li>
+                <li><a class = "navList" href="#"> MENU </a></li>
+                <li><a class = "navList" href="https://www.facebook.com/pdarlene23?mibextid=ZbWKwL"> CONTACT US </a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class = "container2">
+        <h1> MENU </h1>
+        <div class = "menu">
+            <div class = "food">
+                <img src = "YANGA_IMAGES_ITBD/burgers.jpg" width = "200px">
+                <br><br><br>
+                <blockquote> Juicy, big, loaded with toppings of my choice. </blockquote> <br><br>
+                <button class = "orderBtn"> <a href = "#burger"> ORDER BURGERS </a> </button>
+            </div>
+
+            <div class = "food">
+                <img src = "YANGA_IMAGES_ITBD/pasta.jpg" width = "200px">
+                <br><br><br>
+                <blockquote> Handmade Italian pasta. With ingredients fresh from Italy. </blockquote> <br><br>
+                <button class = "orderBtn"> <a href = "#pasta"> ORDER PASTA </a> </button>
+            </div>
+
+            <div class = "food">
+                <img src = "YANGA_IMAGES_ITBD/fries.jpg" width = "200px">
+                <blockquote> Freakin' Hot Fries. A 6 ounce serving of piping-hot french fries, <br>
+                    crispy and more flavorful than any at  <br>
+                    those fast food. </blockquote>
+                <button class = "orderBtn"> <a href = "#fries"> ORDER FRIES </a> </button>
+            </div>
+
+            <div class = "food">
+                <img src = "YANGA_IMAGES_ITBD/drinks.jpg" width = "200px">
+                <br><br><br>
+                <blockquote> Partner your meal with our different refreshing drinks. </blockquote> <br><br>
+                <button class = "orderBtn"> <a href = "#drinks"> ORDER DRINKS </a> </button>
+            </div>
+        </div>
+    </div>
+    <form>
+        <div class = "container3">
+            <div class = "burger" id = "burger">
+                <h2>Burgers</h2>
+                <label for="burgerType">Type of Burger:</label><br>
+                    <select id="burgerType" name="burgerType">
+                        <option value="single">Single Patty</option>
+                        <option value="double">Double Patty</option>
+                    </select><br>
+                    
+                    <label for="burgerType">Additional:</label><br>
+                        <input type = "checkbox" value="cheese">With Cheese
+                        <input type = "checkbox"  value="coleslaw">With Coleslaw
+                        <input type = "checkbox"  value="tomato">With Tomato
+                        <input type = "checkbox" n value="onion">With Onion
+                        <input type = "checkbox"  value="cucumber">With Cucumber
+                        <input type = "checkbox"  value="bacon">With Bacon
+                    </select><br>
+
+                <label for="bun">Choice of Bun:</label><br>
+                <input type="radio" id="white" name="bun" value="white">
+                <label for="white">White Bun</label><br>
+                <input type="radio" id="wheat" name="bun" value="wheat">
+                <label for="wheat">Wheat Bun</label><br>
+                <input type="radio" id="honeyOat" name="bun" value="honeyOat">
+                <label for="honeyOat">Honey Oat</label><br>
+                <input type="radio" id="sugarFree" name="bun" value="sugarFree">
+                <label for="sugarFree">Sugar-Free</label><br>
+
+                <label for="burgerQty">Quantity:</label><br>
+                <input type="number" id="burgerQty" name="burgerQty" min="1" required><br>
+            </div>
+        </div>
+    </form>
+
+    <form>
+        <div class = "container3">
+            <div class = "pasta" id = "pasta">
+                <h2>Pasta</h2>
+                <label for="pastaSauce">Type of Pasta Sauce:</label><br>
+                <select id="pastaSauce" name="pasta-sauce">
+                <option value="carbonara">Carbonara</option>
+                <option value="pesto">Pesto</option>
+                <option value="spaghetti">Spaghetti</option>
+                <option value="extraCheese">Extra Cheese</option>
+                <option value="extraSauce">Extra Sauce</option>
+                </select><br>
+    
+                <label for="pastaQty">Quantity:</label><br>
+                <input type="number" id="pasta-Qty" name="pasta-Qty" min="1" required><br>
+            </div>
+        </div>
+    </form>
+
+    <form>
+        <div class = "container3">
+            <div class = "fries" id = "fries">
+                <h2>Fries</h2>
+                <label for="friesSize">Size:</label><br>
+                <select id="friesSize" name="friesSize">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                </select><br>
+    
+                <label for="friesFlavor">Fries Flavor:</label><br>
+                    <select id="friesFlavor" name="friesFlavor">
+                    <option value="bbq">BBQ</option>
+                    <option value="cheese">Cheese</option>
+                    <option value="sour-cream">Sour Cream</option>
+                    </select><br>
+                    
+                    <label for="friesQty">Quantity:</label><br>
+                    <input type="number" id="friesQty" name="friesQty" min="1" required><br>
+            </div>
+        </div>
+    </form>
+
+    <form>
+        <div class = "container3">
+            <div class = "drinks" id = "drinks">
+                <h2>Drinks</h2>
+                    <label for="drinkType">Type:</label><br>
+                        <input type = "checkbox" value="coke">Coke
+                        <input type = "checkbox" value="sprite">Sprite
+                        <input type = "checkbox" value="icedtea">Ice Tea
+                        <input type = "checkbox" value="pepsi">Pepsi
+                        <input type = "checkbox" value="root">Root Beer
+                        <input type = "checkbox" value="dew">Mountain Dew
+                    </select><br>
+                    
+                    <label for="drinksSize">Size:</label><br>
+                    <select id="drinksSize" name="drinksSize">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select><br>
+
+                    <label for="drinksQty">Quantity:</label><br>
+                    <input type="number" id="drinksQty" name="drinksQty" min="1" required><br>
+            </div>
+        </div>
+    </form>
+
+    <form>
+        <div class = "container3">
+            <div class = "feedback">
+                <h2> Feedback </h2>
+                <label for="feedback">Feedback on how to improve the ordering form::</label><br>
+                    <textarea id="feedback" name="feedback" rows="6"></textarea><br>
+            </div>
+        </div>
+    </form>
+
+    <form>
+        <div class = "container3">
+            <div class = "delivery">
+                <h2>Delivery</h2>
+                <label for="delivery-type">Choice of Delivery:</label><br>
+                <input type="radio" id="del" name="delivery-type" value="del">
+                <label for="del">Delivery</label><br>
+                <input type="radio" id="pick" name="delivery-type" value="pick">
+                <label for="pick">Pick-up</label><br>
+            </div>
+        </div>
+    </form>
+    
+    <form>
+        <div class = "container3">
+            <div class = "customerForm">
+                <h2> Order Form </h2>
+                <label for="fullname">Full Name:</label><br>
+				  <input type="text" id="fullname" name="fullname" required><br>
+
+				  <label for="address">Complete Address:</label><br>
+				  <textarea id="address" name="address" rows="4" required></textarea><br>
+
+				  <label for="contact">Contact Number:</label><br>
+				  <input type="tel" id="contact" name="contact" required><br>
+
+				  <label for="email">Email Address:</label><br>
+				  <input type="email" id="email" name="email" required><br>
+
+				  <label for="description">Description of how to get to the place:</label><br>
+				  <textarea id="description" name="description" rows="4" required></textarea><br>
+
+                  <input class = "submit"type = "submit" value = "SUBMIT">
+                  <input class = "reset" type = "reset" value="CLEAR">
+
+            </div>
+        </div>
+    </form>
+
+</body>
+</html>
